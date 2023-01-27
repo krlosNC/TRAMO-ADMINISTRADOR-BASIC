@@ -127,12 +127,13 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
+    <!-- Solicitudes Pendientes -->
     <div class="row">
       <div class="col-12">
         <div class="card my-4">
           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
             <div class="bg-primary shadow-primary border-radius-lg pt-4 pb-3">
-              <h4 class="text-light ps-3">Solicitudes Conductores</h4>
+              <h4 class="text-light ps-3">Solicitudes Pendientes</h4>
             </div>
           </div>
           <div class="card-body px-0 pb-2">
@@ -173,10 +174,10 @@
                     </td>
                     <td>
                       <div class="text-center" style="margin-top: 10%">
-                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas datos</a>
+                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a>
                       <div class="mt-2">
                         <button class="btn btn-primary mb-2">Aceptar</button>
-                        <button class="btn btn-secondary mb-2">Rechazar</button>
+                        <button class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#escribir-motivo-rechazo">Rechazar</button>
                       </div>
                       </div>
                     </td>
@@ -206,10 +207,10 @@
                     </td>
                     <td>
                       <div class="text-center" style="margin-top: 10%">
-                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas datos</a>
+                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a>
                       <div class="mt-2">
                         <button class="btn btn-primary mb-2">Aceptar</button>
-                        <button class="btn btn-secondary mb-2">Rechazar</button>
+                        <button class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#escribir-motivo-rechazo">Rechazar</button>
                       </div>
                       </div>
                     </td>
@@ -239,10 +240,10 @@
                     </td>
                     <td>
                       <div class="text-center" style="margin-top: 10%">
-                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas datos</a>
+                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a>
                       <div class="mt-2">
                         <button class="btn btn-primary mb-2">Aceptar</button>
-                        <button class="btn btn-secondary mb-2">Rechazar</button>
+                        <button class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#escribir-motivo-rechazo">Rechazar</button>
                       </div>
                       </div>
                     </td>
@@ -272,11 +273,161 @@
                     </td>
                     <td>
                       <div class="text-center" style="margin-top: 10%">
-                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Mostrar mas datos</a>
+                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a>
                       <div class="mt-2">
                         <button class="btn btn-primary mb-2">Aceptar</button>
-                        <button class="btn btn-secondary mb-2">Rechazar</button>
+                        <button class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#escribir-motivo-rechazo">Rechazar</button>
                       </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solicitudes Rechazadas -->
+    <div class="row">
+      <div class="col-12">
+        <div class="card my-4">
+          <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+            <div class="bg-danger shadow-primary border-radius-lg pt-4 pb-3">
+              <h4 class="text-light ps-3">Solicitudes Rechazadas</h4>
+            </div>
+          </div>
+          <div class="card-body px-0 pb-2">
+            <div class="table-responsive p-0">
+              <table class="table align-items-center mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="text-center px-2 py-1">
+                        <div>
+                          <img src="public/img/Camion.jpg" alt="" width="95%">
+                        </div>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Nombre</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Roberto Carlos Noguera</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>N° Telefono</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">320 769 9910</p>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Cedula</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">1059355806</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Correo</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">krlosnoguera21@gmail.com</p>
+                    </td>
+                    <td class="text-center align-middle">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Direccion de residencia</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Carrera 78N - Popayan Cauca</p>
+                    </td>
+                    <td>
+                      <div class="text-center" style="margin-top: 15%">
+                      <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a><br>
+                      <a href="" class="m-0 p-0 text-danger" data-bs-toggle="modal" data-bs-target="#motivo-rechazo">Motivo de rachazo</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="text-center px-2 py-1">
+                        <div>
+                          <img src="public/img/Camion.jpg" alt="" width="95%">
+                        </div>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Nombre</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Roberto Carlos Noguera</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>N° Telefono</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">320 769 9910</p>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Cedula</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">1059355806</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Correo</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">krlosnoguera21@gmail.com</p>
+                    </td>
+                    <td class="text-center align-middle">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Direccion de residencia</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Carrera 78N - Popayan Cauca</p>
+                    </td>
+                    <td>
+                      <div class="text-center" style="margin-top: 20%">
+                        <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a><br>
+                        <a href="" class="m-0 p-0 text-danger" data-bs-toggle="modal" data-bs-target="#motivo-rechazo">Motivo de rachazo</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="text-center px-2 py-1">
+                        <div>
+                          <img src="public/img/Camion.jpg" alt="" width="95%">
+                        </div>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Nombre</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Roberto Carlos Noguera</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>N° Telefono</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">320 769 9910</p>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Cedula</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">1059355806</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Correo</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">krlosnoguera21@gmail.com</p>
+                    </td>
+                    <td class="text-center align-middle">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Direccion de residencia</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Carrera 78N - Popayan Cauca</p>
+                    </td>
+                    <td>
+                      <div class="text-center" style="margin-top: 20%">
+                        <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a><br>
+                        <a href="" class="m-0 p-0 text-danger" data-bs-toggle="modal" data-bs-target="#motivo-rechazo">Motivo de rachazo</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="text-center px-2 py-1">
+                        <div>
+                          <img src="public/img/Camion.jpg" alt="" width="95%">
+                        </div>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Nombre</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Roberto Carlos Noguera</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>N° Telefono</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">320 769 9910</p>
+                    </td>
+                    <td class="text-center align-middle text-sm">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Cedula</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">1059355806</p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Correo</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">krlosnoguera21@gmail.com</p>
+                    </td>
+                    <td class="text-center align-middle">
+                      <p class="font-weight-bold text-xs font-weight-bold m-0"><b>Direccion de residencia</b></p>
+                      <p class="font-weight-bold text-xs font-weight-bold m-0">Carrera 78N - Popayan Cauca</p>
+                    </td>
+                    <td>
+                      <div class="text-center" style="margin-top: 20%">
+                        <a href="" class="m-0 p-0 text-primary" data-bs-toggle="modal" data-bs-target="#mas-datos">Mostrar mas datos</a><br>
+                        <a href="" class="m-0 p-0 text-danger" data-bs-toggle="modal" data-bs-target="#motivo-rechazo">Motivo de rachazo</a>
                       </div>
                     </td>
                   </tr>
@@ -289,12 +440,12 @@
     </div>
     </main>
   
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <!-- Modal Mas Datos -->
+    <div class="modal fade" id="mas-datos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mas-datosLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-xl" id="modal">
       <div class="modal-content">
           <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Mas datos conductor</h1>
+          <h1 class="modal-title fs-5" id="mas-datosLabel">Mas datos conductor</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn-close"></button>
           </div>
           <div class="modal-body text-dark">
@@ -594,7 +745,42 @@
       </div>
       </div>
     </div>
-    <!-- end MODAL -->
+    <!-- end MODAL mas datos -->
+
+      <!-- Modal escribir motivo rechazo -->
+    <div class="modal fade" id="escribir-motivo-rechazo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Escriba el motivo del rechazo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <textarea class="w-100" name="respuesta-pqrs" id="respuesta-pqrs" rows="10"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Confirmar Rechazo y enviar motivo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal escribir motivo rechazo -->
+
+    <!-- Modal motivo rechazo -->
+  <div class="modal fade" id="motivo-rechazo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mas-datosLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="mas-datosLabel">Motivo de rechazo </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          No envio todos los papeles necesarios
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End modal rechazo -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
